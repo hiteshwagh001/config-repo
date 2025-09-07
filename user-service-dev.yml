@@ -1,0 +1,7 @@
+gloabl:
+  message: welcome to the user service dev env
+
+server:
+  port: 8082
+
+message: hello from dev!!
