@@ -1,0 +1,7 @@
+gloabl:
+  message: welcome to the order service dev env
+
+server:
+  port: 8084
+
+message: hello from order service dev!!
