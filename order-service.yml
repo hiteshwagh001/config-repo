@@ -6,3 +6,12 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://eureka-server:8761/eureka/
+
+info:
+  app:
+    name: userservice
+    description: User Management Microservice
+    version: 1.0.0
+  company:
+    name: MyCompany
+    website: https://mycompany.com
