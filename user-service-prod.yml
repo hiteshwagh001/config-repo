@@ -1,0 +1,7 @@
+gloabl:
+  message: welcome to the user service prod env
+
+server:
+  port: 8083
+
+message: hello from prodcutions!!
