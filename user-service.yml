@@ -1,6 +1,3 @@
-# server:
-#   port: 8081
-
 spring:
   application:
     name: user-service
@@ -12,7 +9,7 @@ eureka:
 
 info:
   app:
-    name: userservice
+    name: user-service
     description: User Management Microservice
     version: 1.0.0
   company:
