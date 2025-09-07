@@ -1,12 +1,9 @@
-gloabl:
-  message: welcome to the user service prod env
-
 server:
-  port: 8083
+  port: 8081
 
-message: hello from prodcutions!!
+message: hello from prod!!
 
 eureka:
   client:
     service-url:
-      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka/}
+      defaultZone: ${EUREKA_URI:http://eureka-server:8761/eureka/}
