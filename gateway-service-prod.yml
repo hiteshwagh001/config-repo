@@ -1,0 +1,10 @@
+server:
+  port: 9072
+
+global:
+  message: "Welcome to Gateway Prod Profile"
+
+eureka:
+  client:
+    service-url:
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka/}
