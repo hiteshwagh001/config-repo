@@ -1,0 +1,7 @@
+gloabl:
+  message: welcome to the order service pro env
+
+server:
+  port: 8085
+
+message: hello from productions!!
