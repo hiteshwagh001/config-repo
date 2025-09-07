@@ -5,3 +5,8 @@ server:
   port: 8082
 
 message: hello from dev!!
+
+eureka:
+  client:
+    service-url:
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka/}
