@@ -9,7 +9,7 @@ eureka:
 
 info:
   app:
-      name: order-service
+    name: order-service
     description: order Management Microservice
     version: 1.0.0
   company:
