@@ -1,6 +1,6 @@
 server:
-  port: 9072
-
+  port: 8072
+  
 global:
   message: "Welcome to Gateway Dev Profile"
 
