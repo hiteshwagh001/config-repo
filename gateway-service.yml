@@ -8,13 +8,3 @@ spring:
         connect-timeout: 1000
         response-timeout: 5s
 
-eureka:
-  client:
-    service-url:
-      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka/}
-
-info:
-  app:
-    name: gateway-server
-    description: API Gateway for microservices (Java Config)
-    version: 1.0.0
