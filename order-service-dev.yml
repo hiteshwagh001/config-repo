@@ -1,12 +1,10 @@
 server:
   port: 8084
 
-gloabl:
-  message: welcome to the order service dev env
-
-message: hello from order service dev!!
+message: hello from dev!!
 
 eureka:
   client:
     service-url:
       defaultZone: ${EUREKA_URI:http://localhost:8761/eureka/}
+
