@@ -5,3 +5,14 @@ server:
   port: 8085
 
 message: hello from productions!!
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, info, env, metrics
+  health:
+    livenessstate:
+      enabled: true
+    readinessstate:
+      enabled: true
