@@ -19,3 +19,14 @@ info:
     name: gateway-server
     description: API Gateway for microservices (Java Config)
     version: 1.0.0
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, info, env, metrics
+  health:
+    livenessstate:
+      enabled: true
+    readinessstate:
+      enabled: true
