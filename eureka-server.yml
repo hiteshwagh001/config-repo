@@ -9,3 +9,13 @@ eureka:
   client:
     registerWithEureka: false
     fetchRegistry: false
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, info, env, metrics
+  health:
+    livenessstate:
+      enabled: true
+    readinessstate:
+      enabled: true
