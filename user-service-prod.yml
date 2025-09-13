@@ -4,6 +4,9 @@ server:
 message: hello from prod!!
 
 eureka:
+  instance:
+    prefer-ip-address: true     # always register using IP instead of hostname
+    hostname: ${HOSTNAME:localhost}
   client:
     service-url:
       defaultZone: ${EUREKA_URI:http://eureka-server:8761/eureka/}
