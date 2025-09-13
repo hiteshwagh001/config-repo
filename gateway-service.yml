@@ -8,3 +8,13 @@ spring:
         connect-timeout: 1000
         response-timeout: 5s
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, info, env, metrics
+  health:
+    livenessstate:
+      enabled: true
+    readinessstate:
+      enabled: true
