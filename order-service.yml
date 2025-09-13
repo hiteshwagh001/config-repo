@@ -15,3 +15,14 @@ info:
   company:
     name: MyCompany
     website: https://mycompany.com
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, info, env, metrics
+  health:
+    livenessstate:
+      enabled: true
+    readinessstate:
+      enabled: true
