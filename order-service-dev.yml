@@ -33,14 +33,14 @@ management:
 
 
 resilience4j:
-    circuitbreaker:
-        instances:
-            orderServiceCircuitBreaker:
-                register-health-indicator: true
-                sliding-window-size: 10
-                minimum-number-of-calls: 5
-                failure-rate-threshold: 50
-                wait-duration-in-open-state: 10s
-                permitted-number-of-calls-in-half-open-state: 3
-                event-consumer-buffer-size: 10
-                automatic-transition-from-open-to-half-open-enabled: true
+  circuitbreaker:
+    instances:
+      orderServiceCircuitBreaker:
+        registerHealthIndicator: true
+        slidingWindowSize: 10
+        minimumNumberOfCalls: 5
+        failureRateThreshold: 50
+        waitDurationInOpenState: 10s
+        permittedNumberOfCallsInHalfOpenState: 3
+        eventConsumerBufferSize: 10
+        automaticTransitionFromOpenToHalfOpenEnabled: true
