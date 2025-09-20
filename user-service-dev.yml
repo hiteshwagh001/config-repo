@@ -15,9 +15,28 @@ management:
   endpoints:
     web:
       exposure:
-        include: health, info, env, metrics
+        include: health, info, metrics, refresh, circuitbreakerevents
   health:
     livenessstate:
       enabled: true
     readinessstate:
       enabled: true
+
+  endpoint:
+    health:
+      show-details: ALWAYS
+
+resilience4j:
+  circuitbreaker:
+    instances:
+      orderServiceCircuitBreaker:
+        registerHealthIndicator: true
+        slidingWindowSize: 10
+        minimumNumberOfCalls: 5
+        failureRateThreshold: 50
+        waitDurationInOpenState: 10s
+        permittedNumberOfCallsInHalfOpenState: 3
+        eventConsumerBufferSize: 10
+        automaticTransitionFromOpenToHalfOpenEnabled: true
+        
+        
