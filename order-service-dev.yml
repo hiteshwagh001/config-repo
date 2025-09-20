@@ -18,10 +18,10 @@ management:
       exposure:
         include: health, info, env, metrics, circuitbreakerevents
   endpoint:
-        info:
-            access: UNRESTRICTED
-        health:
-            show-details: ALWAYS
+    info:
+      access: UNRESTRICTED
+    health:
+      show-details: ALWAYS
             
   health:
     livenessstate:
