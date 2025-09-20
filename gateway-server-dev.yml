@@ -16,7 +16,7 @@ management:
   endpoints:
     web:
       exposure:
-        include: health, info, env, metrics, 
+        include: info, health, env, refresh, gateway, metrics, circuitbreakerevents
   health:
     livenessstate:
       enabled: true
