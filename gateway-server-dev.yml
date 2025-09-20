@@ -17,7 +17,7 @@ management:
     web:
       exposure:
         # include: info, health, env, refresh, gateway, metrics, circuitbreakerevents
-        include: *
+        include: "*"
   health:
     livenessstate:
       enabled: true
