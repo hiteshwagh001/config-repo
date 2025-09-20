@@ -5,7 +5,7 @@ message: hello from dev!!
 
 eureka:
   instance:
-    prefer-ip-address: true     # always register using IP instead of hostname
+    prefer-ip-address: true
     hostname: ${HOSTNAME:localhost}
   client:
     service-url:
@@ -21,7 +21,8 @@ management:
       enabled: true
     readinessstate:
       enabled: true
-
+    circuitbreakers:
+      enabled: true
   endpoint:
     health:
       show-details: ALWAYS
@@ -38,5 +39,3 @@ resilience4j:
         permittedNumberOfCallsInHalfOpenState: 3
         eventConsumerBufferSize: 10
         automaticTransitionFromOpenToHalfOpenEnabled: true
-        
-        
