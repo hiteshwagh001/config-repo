@@ -16,7 +16,7 @@ management:
   endpoints:
     web:
       exposure:
-        include: health, info, env, metrics
+        include: health, info, env, metrics, 
   health:
     livenessstate:
       enabled: true
