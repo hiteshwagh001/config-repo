@@ -28,3 +28,22 @@ management:
       enabled: true
     readinessstate:
       enabled: true
+      
+resilience4j:
+  circuitbreaker:
+    configs:
+      default:
+        register-health-indicator: true
+        sliding-window-size: 10
+        minimum-number-of-calls: 5
+        failure-rate-threshold: 50
+        wait-duration-in-open-state: 10s
+        permitted-number-of-calls-in-half-open-state: 3
+        slow-call-duration-threshold: 30s  # Crucial for your test endpoint
+        slow-call-rate-threshold: 50
+        automatic-transition-from-open-to-half-open-enabled: true
+    instances:
+      orderServiceCircuitBreaker:
+        base-config: default
+      userServiceCircuitBreaker:
+        base-config: default
