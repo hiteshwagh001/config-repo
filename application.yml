@@ -1,6 +1,3 @@
-server:
-  port: 8761
-
 global:
   message: Welcome to the microservice project
 
