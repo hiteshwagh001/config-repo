@@ -1,0 +1,38 @@
+server:
+  port: 8762
+
+spring:
+  application:
+    name: eurekaserver
+
+eureka:
+ client:
+   registerWithEureka: false
+   fetchRegistry: false
+  service-url:
+    defaultZone: ${EUREKA_SERVER_URL:http://localhost:8761/eureka/}
+    
+management:
+    endpoints:
+        web:
+            exposure:
+                include: "*" 
+    endpoint:
+        health:
+            access: unrestricted
+        info:
+            access: unrestricted
+        metrics:
+            access: unrestricted
+        prometheus:
+            access: unrestricted
+
+    metrics:
+        tags:
+            application: ${spring.application.name}
+        
+  health:
+    livenessstate:
+      enabled: true
+    readinessstate:
+      enabled: true
