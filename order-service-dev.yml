@@ -21,7 +21,7 @@ management:
   endpoints:
     web:
       exposure:
-        include: health, info, env, metrics, circuitbreakerevents
+        include: health, info, env, metrics, circuitbreakerevents, prometheus
   endpoint:
     info:
       access: UNRESTRICTED
