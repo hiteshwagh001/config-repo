@@ -1,11 +1,11 @@
 server:
   port: 8762
 
-spring:
- eureka:
-  client:
-    registerWithEureka: false
-    fetchRegistry: false
+
+eureka:
+ client:
+   registerWithEureka: false
+   fetchRegistry: false
     
 management:
     endpoints:
