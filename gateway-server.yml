@@ -33,7 +33,8 @@ management:
   endpoints:
     web:
       exposure:
-        include: health, info, env, metrics
+        include: health, info, metrics, refresh, circuitbreakerevents, prometheus
+        
   health:
     livenessstate:
       enabled: true
