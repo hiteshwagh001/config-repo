@@ -21,7 +21,7 @@ management:
   endpoints:
     web:
       exposure:
-        include: info, health, env, refresh, gateway, metrics, circuitbreakerevents
+        include: info, health, env, refresh, gateway, metrics, circuitbreakerevents, prometheus
         # include: "*"
 
   metrics:
